@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <!-- Google Fonts -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+     <!-- CSS Reset -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+     <!-- Milligram CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h1>Chat</h1>
+                <form id="send-message" onsubmit="event.preventDefault();"">
+                    <label for="handle">Your name:</label>
+                    <input id="handle" type="text" placeholder="handle">
+                    <label for="message">Your message:</label>
+                    <input id="message" type="text" placeholder="message">
+                    <input type="submit" value="Send"/>
+                </form>
+                <table id="chat">
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/index.js"></script>
+    <script src="/static/js/socket.js"></script>
+</body>
+</html>
