@@ -12,7 +12,7 @@ chat_db = ChatDB('chat_room')
 
 @app.before_serving
 async def init_db():
-    await chat_db.start_db()
+    await chat_db.connect()
 
 
 @app.websocket('/ws')
