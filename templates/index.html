@@ -26,8 +26,12 @@
                 </form>
                 <table id="chat">
                     <tbody>
-                        <tr>
-                        </tr>
+                        {% for message in messages %}
+                            <tr>
+                                <td>{{ message.handle }}</td>
+                                <td>{{ message.message }}</td>
+                            </tr>
+                        {% endfor %
                     </tbody>
                 </table>
             </div>
